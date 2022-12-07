@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+/* utils */
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.img {
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+}
+
+.title {
+    margin: 0 0 24px 0;
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 44px;
+    color: #333333;
+}
+
+.title-bgc {
+    padding-bottom: 8px;
+    background-color: #4F62F610;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 320px;
+}
+
+/* Header section */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0;
+}
+
+.logo {
+    display: inline-block;
+    font-family: 'MuseoSansCyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.burger-menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Hero section */
+.hero {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    background: #4F62F610;
+}
+
+/* .hero__title {
+    margin: 0 0 24px 0;
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 44px;
+    color: #333333;
+} */
+
+.hero__text {
+    margin-bottom: 32px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4F4F4F;
+}
+
+.hero__button {
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 32px;
+
+    font-family: 'MuseoSansCyrl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background: #6248FF;
+    border-radius: 60px;
+}
+
+.hero__img {
+    width: 100%;
+
+    background-color: #4F62F610;
+}
+
+/* How to use section */
+.how-to-use {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.how-to-use__title {
+    margin-bottom: 40px;
+}
+
+.how-to-use__item {
+    margin-bottom: 24px;
+    padding: 24px;
+
+    border: 2px solid #4F62F6;
+    border-radius: 30px;
+}
+
+.how-to-use__item:last-child {
+    margin-bottom: 0;
+}
+
+.how-to-use__numbering {
+    margin-bottom: 8px;
+
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #4F62F6;
+}
+
+.how-to-use__action {
+    margin-bottom: 24px;
+
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #333333;
+}
+
+.how-to-use__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #4F4F4F;
+}
+
+/* Comments section */
+.comments {
+    padding: 40px 0;
+}
+
+.comments__title {
+    margin-bottom: 40px;
+}
+
+.comments__box {
+    /* text-align: center; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.comments__img-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.comments__img-box--figure {
+    margin-bottom: 24px;
+}
+
+.comments__name {
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: #333333;
+}
+
+.comments__post {
+    margin-bottom: 24px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+
+    text-align: center;
+
+    color: #333333;
+
+    opacity: 0.7;
+}
+
+.comments__comment {
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #333333;
+}
+
+/* Pagination section */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination__img {
+    margin: 0 auto;
+}
+
+.pagination__button {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+}
+
+/* FAQ section */
+.FAQ {
+    padding: 40px 0 80px 0;
+}
+
+.FAQ__title {
+    margin-bottom: 40px;
+}
+
+.FAQ__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 16px;
+    margin-bottom: 16px;
+
+    border: 2px solid #4F62F6;
+    border-radius: 15px;
+}
+
+.FAQ__item:last-child {
+    margin-bottom: 0;
+}
+
+.FAQ__text {
+    width: 190px;
+}
+
+.FAQ__btn-box {
+    display: flex;
+    align-items: center;
+}
