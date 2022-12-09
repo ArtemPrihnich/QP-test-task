@@ -60,8 +60,21 @@ a {
     color: #333333;
 }
 
-.title-bgc {
+/* .title-bgc {
     padding-bottom: 8px;
+    background-color: #4F62F610;
+} */
+
+.title-box {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.title-bgc {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 50px;
     background-color: #4F62F610;
 }
 
@@ -107,14 +120,14 @@ a {
     background: #4F62F610;
 }
 
-/* .hero__title {
+.hero__title {
     margin: 0 0 24px 0;
-    font-family: 'MuseoSansCyrl';
+    /* font-family: 'MuseoSansCyrl';
     font-weight: 500;
     font-size: 40px;
     line-height: 44px;
-    color: #333333;
-} */
+    color: #333333; */
+}
 
 .hero__text {
     margin-bottom: 32px;
@@ -156,7 +169,12 @@ a {
 }
 
 .how-to-use__title {
-    margin-bottom: 40px;
+    width: 250px;
+    /* margin-bottom: 40px; */
+}
+
+.how-to-use__title--bgc {
+    width: 214px;
 }
 
 .how-to-use__item {
@@ -209,6 +227,10 @@ a {
 
 .comments__title {
     margin-bottom: 40px;
+}
+
+.comments__title--bgc {
+    width: 254px;
 }
 
 .comments__box {
@@ -308,6 +330,10 @@ a {
 
 .FAQ__title {
     margin-bottom: 40px;
+}
+
+.FAQ__title--bgc {
+    width: 195px;
 }
 
 .FAQ__item {
@@ -606,7 +632,13 @@ a {
     }
 
     .how-to-use__title {
+        width: 400px;
         margin-bottom: 56px;
+    }
+
+    .how-to-use__title--bgc {
+        width: 350px;
+        height: 37px;
     }
 
     .how-to-use__list {
@@ -640,21 +672,23 @@ a {
     }
 
     .how-to-use__item:nth-child(2) {
-        grid-area: c;
         position: relative;
         top: 10%;
+        grid-area: c;
+        justify-self: end;
     }
 
     .how-to-use__item:nth-child(3) {
-        grid-area: e;
         position: relative;
         bottom: 18%;
+        grid-area: e;
     }
 
     .how-to-use__item:nth-child(4) {
-        grid-area: g;
         position: relative;
         bottom: 10%;
+        grid-area: g;
+        justify-self: end;
     }
 
     .how-to-use__numbering {
@@ -694,7 +728,13 @@ a {
     }
 
     .comments__title {
+        width: 500px;
         margin-bottom: 56px;
+    }
+
+    .comments__title--bgc {
+        width: 168px;
+        height: 72px;
     }
 
     .comments__img-box {
@@ -738,6 +778,15 @@ a {
     /* FAQ section */
     .FAQ {
         padding: 60px 0 120px 0;
+    }
+
+    .FAQ__title {
+        width: 500px;
+    }
+
+    .FAQ__title--bgc {
+        width: 263px;
+        height: 73px;
     }
 
     .FAQ__item {
