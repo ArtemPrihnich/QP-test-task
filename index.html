@@ -13,15 +13,34 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container container--header">
             <div class="header__box">
-                <span class="logo">LOGO</span>
-                <nav>
+                <div class="header__nav-box">
+                    <a class="logo" href="/">LOGO</a>
+                    <nav class="header__nav">
+                        <ul class="header__list list">
+                            <li class="header__item"><a class="header__link" href="/">How it works</a></li>
+                            <li class="header__item"><a class="header__link" href="/">About</a></li>
+                            <li class="header__item"><a class="header__link" href="/">Instructions</a></li>
+                            <li class="header__item"><a class="header__link" href="/">Accounts</a></li>
+                            <li class="header__item"><a class="header__link" href="/">Platforms</a></li>
+                            <li class="header__item"><a class="header__link" href="/">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div style="display: flex;">
+                    <div class="header__lang-box">
+                        <span class="header__lang">EN</span>
+                        <button class="header__lang-btn button">
+                            <img class="img" src="./images/btn-lang.svg" alt="change language">
+                        </button>
+                    </div>
                     <a class="header__authorization" href="">Sign in for free</a>
-                    <button class="burger-menu button">
-                        <img class="img" src="./images/burger-menu.svg" alt="burger-menu">
-                    </button>
-                </nav>
+                </div>
+                <!-- </nav> -->
+                <button class="burger-menu button">
+                    <img class="img" src="./images/burger-menu.svg" alt="burger-menu">
+                </button>
             </div>
         </div>
     </header>
@@ -29,17 +48,23 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title title">Trade everywhere.
-                    Invest here!
-                </h1>
-                <p class="hero__text">
-                    We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and
-                    convenient platform
-                    for access to global exchanges. You can work anywhere.
-                </p>
-                <button class="hero__button button">Start trading</button>
-                <div class="hero__img-box">
-                    <img class="hero__img img" src="./images/hero-img.jpg" alt="schedule">
+                <div class="hero__box">
+                    <div class="hero__content-box">
+                        <h1 class="hero__title title">Trade everywhere.
+                            Invest here!
+                        </h1>
+                        <p class="hero__text">
+                            We provide only the best trading software. The trading terminal MetaTrader4 is the most
+                            popular
+                            and
+                            convenient platform
+                            for access to global exchanges. You can work anywhere.
+                        </p>
+                        <button class="hero__button button">Start trading</button>
+                    </div>
+                    <div class="hero__img-box">
+                        <img class="hero__img img" src="./images/hero-img.jpg" alt="schedule">
+                    </div>
                 </div>
             </div>
         </section>
@@ -89,37 +114,45 @@
         </section>
         <section class="comments">
             <div class="container">
-                <div class="title-box">
-                    <h2 class="comments__title title">People love Big Invest</h2>
-                    <div class="comments__title--bgc title-bgc"></div>
+                <div class="comments__container">
+                    <div class="title-box title-box--comments">
+                        <h2 class="comments__title title">People love Big Invest</h2>
+                        <div class="comments__title--bgc title-bgc"></div>
+                    </div>
+                    <div class="comments__box">
+                        <div class="comments__user-box">
+                            <div class="comments__img-box">
+                                <img class="img" src="./images/user-photo.jpg" alt="user-photo" width="73" height="73">
+                            </div>
+                            <div class="comments__user-info">
+                                <h3 class="comments__name">Albert Abello</h3>
+                                <p class="comments__post">Director of Growth</p>
+                            </div>
+                        </div>
+                        <div style="position: relative;">
+                            <div class="comments__img-box comments__img-box--figure">
+                                <img src="./images/figure.svg" alt="figure" width="33" height="27">
+                            </div>
+                            <p class="comments__content">
+                                This magical product actually works! It has radically changed the way we build our
+                                audiences.
+                                Increasing new customer
+                                sales by 6x in our most mature market.
+                            </p>
+                        </div>
+                        <span class="comments__counter">01/04</span>
+                        <div class="pagination">
+                            <button class="pagination__button button">
+                                <img class="pagination__img img" src="./images/btn-prev.svg"
+                                    alt="button previos comment" width="24" height="24">
+                            </button>
+                            <button class="pagination__button button">
+                                <img class="pagination__img img" src="./images/btn-next.svg" alt="button next comment"
+                                    width="24" height="24">
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="comments__box">
-                    <div class="comments__img-box">
-                        <img class="img" src="./images/user-photo.jpg" alt="user-photo" width="73" height="73">
-                    </div>
-                    <h3 class="comments__name">Albert Abello</h3>
-                    <p class="comments__post">Director of Growth</p>
-                    <div class="comments__img-box comments__img-box--figure">
-                        <img src="./images/figure.svg" alt="figure" width="33" height="27">
-                    </div>
-                    <p class="comments__comment">
-                        This magical product actually works! It has radically changed the way we build our audiences.
-                        Increasing new customer
-                        sales by 6x in our most mature market.
-                    </p>
-                    <span class="comments__counter">01/04</span>
-                    <div class="pagination">
-                        <button class="pagination__button button">
-                            <img class="pagination__img img" src="./images/btn-prev.svg" alt="button previos comment"
-                                width="24" height="24">
-                        </button>
-                        <button class="pagination__button button">
-                            <img class="pagination__img img" src="./images/btn-next.svg" alt="button next comment"
-                                width="24" height="24">
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </section>
         <section class="FAQ">
@@ -190,32 +223,34 @@
         </section>
         <section class="contacts">
             <div class="container contacts__container">
-                <h2 class="contacts__title title">Contact us!</h2>
-                <p class="contacts__text contacts__text--about">
-                    The support staff and customer service are available to help you with any questions or needs you
-                    might have. Just drop
-                    us a line.
-                </p>
-                <p class="contacts__text contacts__text--main">
-                    This site is owned and operated by Kode Tech Solutions LTD
-                </p>
-                <address style="font-style: normal;">
-                    <div>
-                        <h3 class="contacts__address-title">Phone:</h3>
-                        <p class="contacts__text">442038857261</p>
-                    </div>
-                    <div>
-                        <h3 class="contacts__address-title">Email:</h3>
-                        <p class="contacts__text">help@google.com</p>
-                    </div>
-                    <div>
-                        <h3 class="contacts__address-title">Address:</h3>
-                        <p class="contacts__text contacts__text--last">
-                            Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic of the Marshall
-                            Islands, MH 96960
-                        </p>
-                    </div>
-                </address>
+                <div>
+                    <h2 class="contacts__title title">Contact us!</h2>
+                    <p class="contacts__text contacts__text--about">
+                        The support staff and customer service are available to help you with any questions or needs you
+                        might have. Just drop
+                        us a line.
+                    </p>
+                    <p class="contacts__text contacts__text--main">
+                        This site is owned and operated by Kode Tech Solutions LTD
+                    </p>
+                    <address style="font-style: normal;">
+                        <div>
+                            <h3 class="contacts__address-title">Phone:</h3>
+                            <p class="contacts__text">442038857261</p>
+                        </div>
+                        <div>
+                            <h3 class="contacts__address-title">Email:</h3>
+                            <p class="contacts__text">help@google.com</p>
+                        </div>
+                        <div>
+                            <h3 class="contacts__address-title">Address:</h3>
+                            <p class="contacts__text contacts__text--last">
+                                Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic of the Marshall
+                                Islands, MH 96960
+                            </p>
+                        </div>
+                    </address>
+                </div>
                 <form class="form">
                     <input class="form__input" name="name" placeholder="Name" type="text">
                     <input class="form__input" name="email" placeholder="Email" type="email">
@@ -229,71 +264,76 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__box">
-                <span class="footer__logo logo">LOGO</span>
+                <div class="footer__logo-box">
+                    <a class="footer__logo logo" href="">LOGO</a>
+                </div>
+                <ul class="footer__link-list list">
+                    <li class="footer__link-item">
+                        <a class="footer__link" href="/">About us</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a class="footer__link" href="/">Instructions</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a class="footer__link" href="/">Platforms</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a class="footer__link" href="/">Contact Us</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a class="footer__link" href="/">Sign in</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a class="footer__link" href="/">Sign up for free</a>
+                    </li>
+                </ul>
+                <ul class="footer__warning-list list">
+                    <li class="footer__warning-item">
+                        <h3 class="footer__warning-title">Information and high risk warning:</h3>
+                        <p class="footer__warning-text">
+                            Trading with foreign exchange (FX), contract for differences (CFDs) and precious metals
+                            carries
+                            a high level of risk
+                            that may not be suitable for all investors. Leverage creates additional risk and loss
+                            exposure.
+                            Before you decide to
+                            trade foreign exchange or contract for differences, carefully consider your investment
+                            objectives, experience level, and
+                            risk tolerance.
+                        </p>
+                    </li>
+                    <li class="footer__warning-item">
+                        <h3 class="footer__warning-title">Legal disclaimer:</h3>
+                        <p class="footer__warning-text">
+                            Forex trading entails significant risks and is not appropriate for all investors. The
+                            possibility of incurring
+                            substantial losses should be taken into account. It is therefore important to understand the
+                            possible consequences of
+                            investing. Traders should weigh their earning potential against the risks involved and act
+                            accordingly. Interactive
+                            Trade Ltd operating under brand and using domenLink domain within the European Economic
+                            Area.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="footer__policy-list list">
+                    <li class="footer__policy-item">
+                        Copyright 2020, All Right Reserved
+                    </li>
+                    <li class="footer__policy-item">
+                        Terms and Conditions
+                    </li>
+                    <li class="footer__policy-item">
+                        Privacy Policy
+                    </li>
+                    <li class="footer__policy-item">
+                        Risk Warnings
+                    </li>
+                    <li class="footer__policy-item">
+                        Anti-Money Laundering
+                    </li>
+                </ul>
             </div>
-            <ul class="footer__link-list list">
-                <li class="footer__link-item">
-                    <a class="footer__link" href="#">About us</a>
-                </li>
-                <li class="footer__link-item">
-                    <a class="footer__link" href="#">Instructions</a>
-                </li>
-                <li class="footer__link-item">
-                    <a class="footer__link" href="#">Platforms</a>
-                </li>
-                <li class="footer__link-item">
-                    <a class="footer__link" href="#">Contact Us</a>
-                </li>
-                <li class="footer__link-item">
-                    <a class="footer__link" href="#">Sign in</a>
-                </li>
-                <li class="footer__link-item">
-                    <a class="footer__link" href="#">Sign up for free</a>
-                </li>
-            </ul>
-            <ul class="footer__warning-list list">
-                <li class="footer__warning-item">
-                    <h3 class="footer__warning-title">Information and high risk warning:</h3>
-                    <p class="footer__warning-text">
-                        Trading with foreign exchange (FX), contract for differences (CFDs) and precious metals carries
-                        a high level of risk
-                        that may not be suitable for all investors. Leverage creates additional risk and loss exposure.
-                        Before you decide to
-                        trade foreign exchange or contract for differences, carefully consider your investment
-                        objectives, experience level, and
-                        risk tolerance.
-                    </p>
-                </li>
-                <li class="footer__warning-item">
-                    <h3 class="footer__warning-title">Legal disclaimer:</h3>
-                    <p class="footer__warning-text">
-                        Forex trading entails significant risks and is not appropriate for all investors. The
-                        possibility of incurring
-                        substantial losses should be taken into account. It is therefore important to understand the
-                        possible consequences of
-                        investing. Traders should weigh their earning potential against the risks involved and act
-                        accordingly. Interactive
-                        Trade Ltd operating under brand and using domenLink domain within the European Economic Area.
-                    </p>
-                </li>
-            </ul>
-            <ul class="footer__policy-list list">
-                <li class="footer__policy-item">
-                    Copyright 2020, All Right Reserved
-                </li>
-                <li class="footer__policy-item">
-                    Terms and Conditions
-                </li>
-                <li class="footer__policy-item">
-                    Privacy Policy
-                </li>
-                <li class="footer__policy-item">
-                    Risk Warnings
-                </li>
-                <li class="footer__policy-item">
-                    Anti-Money Laundering
-                </li>
-            </ul>
         </div>
     </footer>
 </body>
