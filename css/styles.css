@@ -147,8 +147,6 @@ a {
 
 .hero__img {
     width: 100%;
-
-    background-color: #4F62F610;
 }
 
 /* How to use section */
@@ -213,12 +211,9 @@ a {
     margin-bottom: 40px;
 }
 
-/* .comments__box {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
+.comments__box {
+    position: relative;
+}
 
 .comments__img-box {
     display: flex;
@@ -256,6 +251,8 @@ a {
 }
 
 .comments__comment {
+    margin-bottom: 24px;
+
     font-family: 'MuseoSansCyrl';
     font-weight: 500;
     font-size: 24px;
@@ -265,8 +262,29 @@ a {
     color: #333333;
 }
 
+.comments__counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    /* margin-bottom: 12px; */
+
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    text-align: center;
+
+    color: #4F62F6;
+}
+
 /* Pagination section */
 .pagination {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 280px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -281,17 +299,6 @@ a {
     height: 48px;
     border: 1px solid #E0E0E0;
     border-radius: 50%;
-}
-
-.pagination__counter {
-    font-family: 'MuseoSansCyrl';
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-
-    text-align: center;
-
-    color: #4F62F6;
 }
 
 /* FAQ section */
@@ -595,7 +602,7 @@ a {
     /* How to use section */
     .how-to-use {
         padding-top: 120px;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
     }
 
     .how-to-use__title {
@@ -604,54 +611,80 @@ a {
 
     .how-to-use__list {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* grid-auto-rows: minmax(100px, auto); */
+        grid-template-areas:
+            'a b'
+            'a b'
+            'a c'
+            'd c'
+            'd c'
+            'e f'
+            'e f'
+            'e g'
+            'h g'
+            'h g';
     }
 
     .how-to-use__item {
+        position: relative;
         width: 329px;
         padding: 32px;
         margin-bottom: 0;
 
+        background-color: #fff;
         border-color: #6248FF;
     }
 
-    /* .how-to-use__figure {} */
+    .how-to-use__item:nth-child(1) {
+        grid-area: a;
+        position: relative;
+    }
+
+    .how-to-use__item:nth-child(2) {
+        grid-area: c;
+        position: relative;
+        top: 10%;
+    }
+
+    .how-to-use__item:nth-child(3) {
+        grid-area: e;
+        position: relative;
+        bottom: 18%;
+    }
+
+    .how-to-use__item:nth-child(4) {
+        grid-area: g;
+        position: relative;
+        bottom: 10%;
+    }
 
     .how-to-use__numbering {
         color: #6248FF;
     }
 
-    .one {
-        grid-row-start: 1;
-        grid-column-start: 1;
-        grid-row-end: 2;
-        grid-column-end: 2;
-        justify-self: start;
+    .how-to-use__figure {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        width: calc(50% + 30px);
+        height: 30%;
+        border: 3px dashed #6248FF;
+
+        border-top-right-radius: 30px;
+        border-bottom: none;
+        border-left: none;
     }
 
-    .two {
-        grid-row-start: 2;
-        grid-column-start: 2;
-        grid-row-end: 3;
-        grid-column-end: 3;
-        justify-self: end;
-    }
+    .how-to-use__figure--revers {
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        width: calc(50% + 30px);
+        height: 30%;
+        border: 3px dashed #6248FF;
 
-    .tri {
-        grid-row-start: 3;
-        grid-column-start: 1;
-        grid-row-end: 4;
-        grid-column-end: 2;
-        justify-self: start;
-    }
-
-    .four {
-        grid-row-start: 4;
-        grid-column-start: 2;
-        grid-row-end: 5;
-        grid-column-end: 3;
-        justify-self: end;
+        border-top-left-radius: 30px;
+        border-bottom: none;
+        border-right: none;
     }
 
 
@@ -681,8 +714,17 @@ a {
         margin: 0 auto 32px auto;
     }
 
+    .comments__counter {
+        height: auto;
+        color: #6248FF;
+    }
+
 
     /* Pagination section */
+    .pagination {
+        width: 688px;
+    }
+
     .pagination__button {
         /* width: 48px;
             height: 48px;
@@ -690,10 +732,6 @@ a {
             border-radius: 50%; */
         position: relative;
         bottom: 197.5px;
-    }
-
-    .pagination__counter {
-        color: #6248FF;
     }
 
 
