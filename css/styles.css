@@ -22,6 +22,10 @@ a {
 }
 
 /* utils */
+.is-hidden {
+    display: none;
+}
+
 .list {
     padding: 0;
     margin: 0;
@@ -49,6 +53,18 @@ a {
     text-transform: uppercase;
 
     background-color: #ffffff;
+}
+
+.button-state:hover {
+    background: #7181FC;
+}
+
+.button-state:active {
+    background: #354BF4;
+}
+
+.button-state:disabled {
+    background: #E0E0E0;
 }
 
 .title {
@@ -173,10 +189,18 @@ a {
     border-radius: 60px;
 }
 
+.hero__img-box {
+    width: 280px;
+    height: 301px;
+
+    /* background-color: gray; */
+    /* background-image: url(/images/hero-img.jpg); */
+}
+
 .hero__img {
     width: 100%;
 
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 /* How to use section */
@@ -355,7 +379,8 @@ a {
 
 .FAQ__item {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
     padding: 24px 16px;
     margin-bottom: 16px;
 
@@ -383,6 +408,18 @@ a {
     align-items: center;
 }
 
+.FAQ__btn-box--rotate {
+    transform: rotate(45deg);
+}
+
+.FAQ__content {
+    margin-top: 24px;
+
+    font-size: 16px;
+    line-height: 27px;
+
+    color: #4F4F4F;
+}
 
 /* Contacts section */
 .contacts {
@@ -495,6 +532,25 @@ a {
     border-radius: 60px;
 }
 
+.form__error {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+
+    color: #EB5757;
+}
+
+.input__invalid {
+    border-color: red;
+}
+
+.input__valid {
+    border-color: green;
+}
 
 /* Footer section */
 .footer {
@@ -643,6 +699,7 @@ a {
     }
 
     .hero__img-box {
+        height: 450px;
         width: 418px;
         margin: 0 auto;
     }
@@ -825,6 +882,10 @@ a {
         line-height: 29px;
     }
 
+    .FAQ__content {
+        width: 558px;
+    }
+
 
     /* Contacts title */
     .contacts {
@@ -999,6 +1060,8 @@ a {
     }
 
     .hero__title {
+        margin-top: 39px;
+
         text-align: start;
     }
 
@@ -1015,6 +1078,7 @@ a {
 
     .hero__img-box {
         width: 482px;
+        height: auto;
     }
 
 
@@ -1141,6 +1205,10 @@ a {
     .FAQ__list {
         width: 995px;
         margin: 0 auto;
+    }
+
+    .FAQ__content {
+        width: 750px;
     }
 
 
