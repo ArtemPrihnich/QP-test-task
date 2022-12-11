@@ -28,7 +28,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div style="display: flex;">
+                <div class="header__div-box">
                     <div class="header__lang-box">
                         <span class="header__lang">EN</span>
                         <button class="header__lang-btn button">
@@ -62,7 +62,10 @@
                         <button class="hero__button button button-state">Start trading</button>
                     </div>
                     <div class="hero__img-box">
-                        <img class="hero__img img" src="./images/hero-img.png" alt="schedule">
+                        <img class="hero__img img" srcset="./images/mobile-hero-img.png 280w,
+                         ./images/tablet-hero-img.png 418w,
+                        ./images/desktop-hero-img.png 482w" sizes="(max-width: 767px) 280px,
+                        (max-width: 1439px) 418px, auto" src="./images/desktop-hero-img.png" alt="schedule">
                     </div>
                 </div>
             </div>
@@ -128,7 +131,7 @@
                                 <p class="comments__post">Director of Growth</p>
                             </div>
                         </div>
-                        <div style="position: relative;">
+                        <div class="comments__content-box">
                             <div class="comments__img-box comments__img-box--figure">
                                 <img src="./images/figure.svg" alt="figure" width="33" height="27">
                             </div>
@@ -162,7 +165,7 @@
                 </div>
                 <ul class="FAQ__list list">
                     <li class="FAQ__item">
-                        <div style="display: flex; justify-content: space-between;">
+                        <div class="FAQ__item-box">
                             <p class="FAQ__text">How do I change my details?</p>
                             <div class="FAQ__btn-box">
                                 <button class="FAQ__button button">
@@ -180,7 +183,7 @@
                         </p>
                     </li>
                     <li class="FAQ__item">
-                        <div style="display: flex; justify-content: space-between;">
+                        <div class="FAQ__item-box">
                             <p class="FAQ__text">What platforms will I be able to use?</p>
                             <div class="FAQ__btn-box">
                                 <button class="FAQ__button button">
@@ -198,7 +201,7 @@
                         </p>
                     </li>
                     <li class="FAQ__item">
-                        <div style="display: flex; justify-content: space-between;">
+                        <div class="FAQ__item-box">
                             <p class="FAQ__text">How do I change my details?</p>
                             <div class="FAQ__btn-box">
                                 <button class="FAQ__button button">
@@ -216,7 +219,7 @@
                         </p>
                     </li>
                     <li class="FAQ__item">
-                        <div style="display: flex; justify-content: space-between;">
+                        <div class="FAQ__item-box">
                             <p class="FAQ__text">How do I change my details?</p>
                             <div class="FAQ__btn-box">
                                 <button class="FAQ__button button">
@@ -234,7 +237,7 @@
                         </p>
                     </li>
                     <li class="FAQ__item">
-                        <div style="display: flex; justify-content: space-between;">
+                        <div class="FAQ__item-box">
                             <p class="FAQ__text">How do I change my details?</p>
                             <div class="FAQ__btn-box">
                                 <button class="FAQ__button button">
@@ -252,7 +255,7 @@
                         </p>
                     </li>
                     <li class="FAQ__item">
-                        <div style="display: flex; justify-content: space-between;">
+                        <div class="FAQ__item-box">
                             <p class="FAQ__text">How do I change my details?</p>
                             <div class="FAQ__btn-box">
                                 <button class="FAQ__button button">
@@ -270,7 +273,7 @@
                         </p>
                     </li>
                     <li class="FAQ__item">
-                        <div style="display: flex; justify-content: space-between;">
+                        <div class="FAQ__item-box">
                             <p class="FAQ__text">How do I change my details?</p>
                             <div class="FAQ__btn-box">
                                 <button class="FAQ__button button">
@@ -302,7 +305,7 @@
                     <p class="contacts__text contacts__text--main">
                         This site is owned and operated by Kode Tech Solutions LTD
                     </p>
-                    <address style="font-style: normal;">
+                    <address class="contacts__address-box">
                         <div>
                             <h3 class="contacts__address-title">Phone:</h3>
                             <p class="contacts__text">442038857261</p>
@@ -320,12 +323,12 @@
                         </div>
                     </address>
                 </div>
-                <form class="form">
-                    <div style="position: relative;">
+                <form class="form" autocomplete="off">
+                    <div class="form__input-box">
                         <input class="form__input" onkeyup="validateName()" name="name" placeholder="Name" type="text">
                         <span class="form__error form__error-name"></span>
                     </div>
-                    <div style="position: relative;">
+                    <div class="form__input-box">
                         <input class="form__input" onkeyup="validateEmail()" name="email" placeholder="Email"
                             type="email">
                         <span class="form__error form__error-email"></span>

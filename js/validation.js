@@ -41,4 +41,9 @@ form.onsubmit = function (e) {
 
     validateName()
     validateEmail()
+
+    nameInput.classList.remove('input__valid')
+    emailInput.classList.remove('input__valid')
+
+    form.reset()
 }
